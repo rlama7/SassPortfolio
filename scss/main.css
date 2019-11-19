@@ -335,6 +335,10 @@
   opacity: 0.9;
 }
 
+.projects_item:hover .projects_btn {
+  opacity: 1;
+}
+
 .projects_btns {
   position: absolute;
   top: 0;
@@ -353,14 +357,28 @@
 
 .projects_btn {
   opacity: 0;
-  -webkit-column-rule: #000;
-          column-rule: #000;
+  color: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .projects_btn:hover {
   color: #fff;
+}
+
+.projects .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects footer {
+  -webkit-transform: rotate(90deg) translate(-12rem, -9rem);
+          transform: rotate(90deg) translate(-12rem, -9rem);
 }
 
 /* End Projects */
