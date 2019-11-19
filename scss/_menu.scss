@@ -37,6 +37,7 @@
       background: set-text-color($primary-color);
       @include transition-ease;
     }
+
     &.open {
       transform: rotate(720deg);
       background: transparent;
@@ -91,9 +92,10 @@
       }
 
       &.active > a {
-          color: $secondary-color;
+        color: $secondary-color;
       }
     }
+
     &_link {
       display: inline-block;
       font-size: 2rem;
@@ -107,7 +109,7 @@
       }
     }
   }
-}
+} /* menu-nav */
 
 @for $i from 1 through 4 {
   .menu-nav_item:nth-child(#{$i}) {
