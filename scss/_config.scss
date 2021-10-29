@@ -14,6 +14,7 @@ $secondary-color: #ff652f;
   transition: all 0.5s ease-in-out;
 }
 
+// function to set color
 @function set-text-color($color) {
   @if (lightness($color) > 40%) {
     @return #000;
